@@ -1,19 +1,17 @@
 <!--
  * @Author: zhangfuning 401645191@qq.com
- * @Date: 2023-03-17 13:52:33
+ * @Date: 2023-03-18 19:51:50
  * @LastEditors: zhangfuning 401645191@qq.com
- * @LastEditTime: 2023-03-20 17:34:00
- * @FilePath: /my-vue-app/src/views/chooseicon/index.vue
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @LastEditTime: 2023-03-20 17:33:55
+ * @FilePath: /my-vue-app/src/views/chooseArea/index.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置:
 -->
 <template>
-  <div >
-    <mchooseIcon  title="选择图标"  v-model:visible="visible"></mchooseIcon>
-  </div>
+  <choose-area @change="changArea" ></choose-area>
 </template>
 
 <script setup lang='ts'>
-// import mchooseIcon from '../../components/chooseicon/src/index.vue'
+// import chooseArea from '../../components/chooseArea/src/index.vue'
 import { ref, reactive, toRefs, onBeforeMount, onMounted, watchEffect, computed } from 'vue';
 // import { useStore } from 'pinia';
 import { useRoute, useRouter } from 'vue-router';
@@ -33,8 +31,10 @@ const router = useRouter();
 /**
 * 数据部分
 */
+const changArea = (val: any)=>{
+  console.log(val);
+}
 const data = reactive({})
-const visible = ref<boolean>(false)
 onBeforeMount(() => {
   //console.log('2.组件挂载页面之前执行----onBeforeMount')
 })
