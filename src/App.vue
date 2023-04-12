@@ -12,5 +12,7 @@
 <style  lang='scss'>
 @import './styles/common';
 @import './styles/ui';
-
+.el-popper {
+    padding: 0!important;
+}
 </style>

@@ -2,7 +2,7 @@
  * @Author: zhangfuning 401645191@qq.com
  * @Date: 2023-03-20 17:26:02
  * @LastEditors: zhangfuning 401645191@qq.com
- * @LastEditTime: 2023-03-25 15:15:56
+ * @LastEditTime: 2023-03-30 14:59:18
  * @FilePath: /my-vue-app/src/components/index.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -12,7 +12,8 @@ import chooseicon from './chooseicon'
 import trend from './trend'
 import notification from './notification'
 import mList from './list'
-const components = [chooseArea,chooseicon,trend,notification,mList]
+import menu from './menu'
+const components = [chooseArea,chooseicon,trend,notification,mList,menu]
 export default {
     install(app:App){
         components.map(item=>{
