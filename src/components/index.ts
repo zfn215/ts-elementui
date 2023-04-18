@@ -15,7 +15,8 @@ import mList from './list'
 import menu from './menu'
 import progress from './progress'
 import chooseTime from './chooseTime'
-const components = [chooseArea, chooseicon, trend, notification, mList, menu, progress, chooseTime]
+import chooseDate from './chooseDate'
+const components = [chooseArea, chooseicon, trend, notification, mList, menu, progress, chooseTime,chooseDate]
 export default {
     install(app: App) {
         components.map(item => {
