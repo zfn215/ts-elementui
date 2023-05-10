@@ -2,7 +2,7 @@
  * @Author: zhangfuning 401645191@qq.com
  * @Date: 2023-03-09 16:35:40
  * @LastEditors: zhangfuning 401645191@qq.com
- * @LastEditTime: 2023-04-18 14:51:50
+ * @LastEditTime: 2023-04-22 14:09:03
  * @FilePath: /my-vue-app/src/router/idnex.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -50,6 +50,10 @@ const routes:RouteRecordRaw[]= [
             {
                 path:'/chooseCity',
                 component:()=>import('../views/chooseCity/index.vue')
+            },
+            {
+                path:'/form',
+                component:()=>import('../views/form/index.vue')
             },
         ]
     

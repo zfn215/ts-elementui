@@ -2,7 +2,7 @@
  * @Author: zhangfuning 401645191@qq.com
  * @Date: 2023-03-20 17:26:02
  * @LastEditors: zhangfuning 401645191@qq.com
- * @LastEditTime: 2023-04-18 14:40:02
+ * @LastEditTime: 2023-04-22 14:10:02
  * @FilePath: /my-vue-app/src/components/index.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,7 +17,8 @@ import progress from './progress'
 import chooseTime from './chooseTime'
 import chooseDate from './chooseDate'
 import chooseCity from './chooseCity'
-const components = [chooseArea, chooseicon, trend, notification, mList, menu, progress, chooseTime,chooseDate,chooseCity]
+import form from './form'
+const components = [chooseArea, chooseicon, trend, notification, mList, menu, progress, chooseTime,chooseDate,chooseCity,form]
 export default {
     install(app: App) {
         components.map(item => {
